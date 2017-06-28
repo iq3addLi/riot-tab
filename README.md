@@ -25,7 +25,7 @@ Please note that you need to write with lowercase.
 ```
 
 ## Access
-From the tag of the child you can refer from opts.nav
+From the tag of the child you can refer from opts.tab
 ```js
 opts.tab
 opts.tabBarController // Familiar to iOS engineers
