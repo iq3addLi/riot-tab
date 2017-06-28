@@ -1,16 +1,9 @@
 <application>
     
-<tabbarcontroller tabs={ tabDefinisions } />
-
-<script>
-var self = this
-self.tabDefinisions = [
-    { tagName : "firstviewcontroller" },
-    { tagName : "secondviewcontroller" },
-    { tagName : "thirdviewcontroller" }
-]
-
-
-</script>
+<tabbarcontroller tabs={ [
+    { tagName : "firstviewcontroller", opt : {} },
+    { tagName : "secondviewcontroller", opt : {} },
+    { tagName : "thirdviewcontroller", opt : {} }
+] } />
 
 </application>
