@@ -18,7 +18,7 @@ var tags = [] // not self.tags
 self.on("mount",function(){
     if ( self.opts.tabs != null && self.opts.tabs instanceof Array){
         for ( var i = 0; i < self.opts.tabs.length; i++ ){
-            addTabViewController( self.opts.tabs[i].tagName , self.opts.tabs[i].opt )
+            addTabViewController( self.opts.tabs[i].tagName , self.opts.tabs[i].opts )
         }
     }
 })
@@ -43,7 +43,7 @@ var tabBarControllerPublic = {
 // -----------
 // private
 // -----------
-var addTabViewController = function( tagName, opt ){
+var addTabViewController = function( tagName, opts ){
     var views = document.getElementById("views")
 
     // create new viewcontroller's element

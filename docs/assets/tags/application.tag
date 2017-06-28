@@ -1,9 +1,9 @@
 <application>
     
 <tabbarcontroller tabs={ [
-    { tagName : "firstviewcontroller", opt : {} },
-    { tagName : "secondviewcontroller", opt : {} },
-    { tagName : "thirdviewcontroller", opt : {} }
+    { tagName : "firstviewcontroller", opts : {} },
+    { tagName : "secondviewcontroller", opts : {} },
+    { tagName : "thirdviewcontroller", opts : {} }
 ] } />
 
 </application>
