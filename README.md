@@ -18,9 +18,9 @@ A radio-style selection view manager for riot.js like UITabBarController in iOS.
 Please note that you need to write with lowercase.
 ```html
 <tabbarcontroller tabs={ [
-    { tagName : "firstviewcontroller", opt : {} },
-    { tagName : "secondviewcontroller", opt : {} },
-    { tagName : "thirdviewcontroller", opt : {} }
+    { tagName : "firstviewcontroller", opts : {} },
+    { tagName : "secondviewcontroller", opts : {} },
+    { tagName : "thirdviewcontroller", opts : {} }
 ] } />
 ```
 
