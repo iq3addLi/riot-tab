@@ -1,7 +1,7 @@
 <ThirdViewController>
 
 <style>
-#body{
+.body{
     width: 100%;
     height: 100%;
     background-color: azure;
@@ -10,7 +10,7 @@
 </style>
 
 <!-- View -->
-<div id="body">
+<div class="body">
     <h1>This view is ThirdViewController</h1>
     <button onclick={ onFirst }>first</button>
     <button onclick={ onSecond }>Second</button>

@@ -1,6 +1,6 @@
 <SecondViewController>
 <style>
-#body{
+.body{
     width: 100%;
     height: 100%;
     background-color: aquamarine;
@@ -9,7 +9,7 @@
 </style>
 
 <!-- View -->
-<div id="body">
+<div class="body">
     <h1>This view is SecondViewController</h1>
     <button onclick={ onFirst }>first</button>
     <button onclick={ onSecond }>Second</button>
