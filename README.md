@@ -33,6 +33,11 @@ opts.tab
 opts.tabBarController // Familiar to iOS engineers
 ```
 
+#### from a child of riot-nav
+```js
+opts.nav.tab
+```
+
 ## API
 
 ### selectedIndex
