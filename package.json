@@ -1,0 +1,31 @@
+{
+  "name": "riot-tab",
+  "version": "0.2.0",
+  "description": "A radio-style selection view manager for riot.js like UITabBarController in iOS.",
+  "files": [
+    "dist"
+  ],
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iq3addLi/riot-tab.git"
+  },
+  "keywords": [
+    "riot",
+    "riotjs",
+    "single-page-applications",
+    "minimal",
+    "radio-style-selection"
+  ],
+  "author": "iq3+Li",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iq3addLi/riot-tab/issues"
+  },
+  "homepage": "https://github.com/iq3addLi/riot-tab#readme"
+}

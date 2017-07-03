@@ -1,3 +1,14 @@
+<!--
+/*!
+ * A radio-style selection view manager for riot.js like UITabBarController in iOS. 
+ * https://github.com/iq3addLi/riot-tab
+ *
+ * Copyright +Li, Inc.
+ * Released under the MIT license
+ * https://github.com/iq3addLi/riot-tab/blob/master/LICENSE
+ *
+ */
+-->
 <TabBarController>
 
 <!-- View -->
