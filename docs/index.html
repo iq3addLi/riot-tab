@@ -8,14 +8,32 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
         <meta name="viewport" content="width=device-width" />
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
 
     <body>
-        <h1>sample list</h1>
-        <ul>
-            <li><a href="./basic/index.html">basic usage</a></li>
-            <li><a href="./used-with-riot-nav/index.html">used with riot-nav</a></li>
-        </ul>
+        <application />
     </body>
 
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/riot@3.6/riot+compiler.min.js"></script>
+    
+    <!-- riot-tags -->
+    <script type="riot/tag" src="assets/tags/application.tag"></script>
+    <script type="riot/tag" src="assets/tags/navigationbar.tag"></script>
+
+    <script>
+        riot.compile(function(){
+            riot.mount("application")
+        })
+    </script>
 </html>
