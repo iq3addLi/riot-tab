@@ -90,15 +90,26 @@ var addTabViewController = function( tagName, tabOptions ){
 var selectedIndex = function(){
     var views = document.getElementById(self.uniqueID())
     for( var i = 0; i < views.children.length; i++ ){
-        if( !views.children[i].classList.contain("riot-tag-inactive-view") ) { return i }
+        if( !views.children[i].classList.contains("riot-tag-inactive-view") ) { return i }
     }
 }
 
 var setSelectedIndex = function( index ){
+    if( index == selectedIndex() ) return
+
+    var selectingTag = tags[selectedIndex()]
+    if( selectingTag.shouldSelect && selectingTag.shouldSelect() == false ) return
+
     var views = document.getElementById(self.uniqueID())
     for( var i = 0; i < views.children.length; i++ ){
         var view = views.children[i]
-        if( i == index ){ view.classList.remove("riot-tag-inactive-view") }
+        if( i == index ){ 
+            view.classList.remove("riot-tag-inactive-view")
+            var tag = tags[i]
+            if( tag.didSelect ) { 
+                tag.didSelect()
+            }
+        }
         else { view.classList.add("riot-tag-inactive-view") }
     }
 }

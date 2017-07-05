@@ -66,6 +66,17 @@ self.onSecond = function(){
 self.onThird = function(){
     self.opts.nav.tab.setSelectedIndex(2)
 }
+
+// delegate
+self.shouldSelect = function(){
+    console.log("shouldSelect")
+    return true
+}
+
+self.didSelect = function(){
+    console.log("didSelect")
+}
+
 </script>
 
 </RootViewController>

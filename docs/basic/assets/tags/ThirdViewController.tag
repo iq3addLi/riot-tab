@@ -36,7 +36,15 @@ self.onThird = function(){
     self.opts.tabBarController.setSelectedIndex(2)
 }
 
-</script>
+// delegate
+self.shouldSelect = function(){
+    console.log("shouldSelect")
+    return true
+}
 
+self.didSelect = function(){
+    console.log("didSelect")
+}
+</script>
 
 </ThirdViewController>

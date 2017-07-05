@@ -35,6 +35,16 @@ self.onThird = function(){
     self.opts.tabBarController.setSelectedIndex(2)
 }
 
+// delegate
+self.shouldSelect = function(){
+    console.log("shouldSelect")
+    return true
+}
+
+self.didSelect = function(){
+    console.log("didSelect")
+}
+
 </script>
 
 </SecondViewController>
