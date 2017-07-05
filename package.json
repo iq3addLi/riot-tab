@@ -1,6 +1,6 @@
 {
   "name": "riot-tab",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A radio-style selection view manager for riot.js like UITabBarController in iOS.",
   "files": [
     "dist"
