@@ -5,13 +5,14 @@ A radio-style selection view manager for riot.js like UITabBarController in iOS.
 
 ## How to use
 
-### import tag
+### Case1. manual install
+#### import tag
 ```html
 <script type="riot/tag" src="path/to/TabBarController.tag"></script>
 ```
-### mount with tags
+#### mount with tags
 Please note that you need to write with lowercase.
-```html
+```javascript
 <tabbarcontroller tabs={ [
     { tagName : "firstviewcontroller", opts : {} },
     { tagName : "secondviewcontroller", opts : {} },
@@ -20,11 +21,36 @@ Please note that you need to write with lowercase.
 ```
 #### with riot-nav
 When used with [riot-nav](https://github.com/iq3addLi/riot-nav).
-```html
+```javascript
 <tabbarcontroller tabs={ [
     { tagName : "navigationcontroller", opts : { root : "firstviewcontroller" } },
     { tagName : "navigationcontroller", opts : { root : "secondviewcontroller" } },
     { tagName : "navigationcontroller", opts : { root : "thirdviewcontroller" } }
+] } />
+```
+
+### Case2. npm & rollup
+In order to use this method, you need to install the following software. You need to set rollup.config.js, but I will omit it here.
+* npm
+* rollup
+* rollup-plugin-riot
+* rollup-plugin-node-resolve
+* rollup-plugin-commonjs
+
+#### npm install
+```bash
+npm install --save riot-tab
+```
+#### import riot-tab
+```javascript
+import 'riot-tab/dist/TabBarController.tag'
+```
+#### mount
+```javascript
+<tabbarcontroller tabs={ [
+    { tagName : "firstviewcontroller", opts : {} },
+    { tagName : "secondviewcontroller", opts : {} },
+    { tagName : "thirdviewcontroller", opts : {} }
 ] } />
 ```
 
