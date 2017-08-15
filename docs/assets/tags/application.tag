@@ -29,6 +29,7 @@ self.title = "riot-tab"
 self.samples = [
     { caption : "minimal basic usage", url : "./samples/basic/index.html" },
     { caption : "used with riot-nav", url : "./samples/used-with-riot-nav/index.html" },
+    { caption : "check active by child tag", url : "./samples/is-active/index.html" },
 ]
 
 </script>

@@ -48,7 +48,14 @@ self.selectedIndex = function(){
 self.setSelectedIndex = function( index ){
     setSelectedIndex( index )
 }
+self.isActive = function( tag ){
+    return tags[selectedIndex()] == tag
+}
+self.viewTags = function(){
+    return tags
+}
 
+// internal function
 self.uniqueID = function(){
     if( tab_id ) { return tab_id }
     tab_id = "riot-tab_" + uuidv4()

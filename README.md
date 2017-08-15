@@ -80,6 +80,20 @@ Changed to active.
 tab.setSelectedIndex(1)
 ```
 
+### isActive
+Check activing in a tag.
+> ⚠️ This method can't use in on("mount",...).
+```js
+tab.isActive( tag )
+```
+
+### viewTags
+Return tags by managed at riot-tab. It corresponds to ios tabbarController.viewcontrollers
+> ⚠️  Not contain caller tag when call in on("mount",...).
+```js
+tab.viewTags()
+```
+
 ## Demo
 [View demo](https://iq3addli.github.io/riot-tab/index.html)
 
