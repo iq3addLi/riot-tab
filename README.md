@@ -3,6 +3,11 @@ A radio-style selection view manager for riot.js like UITabBarController in iOS.
 
 <a href="https://www.npmjs.com/package/riot-tab"><img src="https://img.shields.io/npm/v/riot-tab.svg?style=shield"></a>
 
+Although it is a reference, the following points are different.
+
+* Do not include UI.
+* Add methods I wanted for iOS version.
+
 ## How to use
 
 ### Case1. manual install
