@@ -23,58 +23,59 @@
 <!-- Controller -->
 <script>
 var self = this
+
+// riot lifecycle
 self.on("mount",function(){
     console.log("mount")
 })
+self.on("unmount",function(){
+    console.log("unmount")
+})
 
-self.didLoad = function(){
-    console.log("did load.")
-}
-
-self.willAppear = function(){
-    console.log("will appear.")
-}
-
-self.didAppear = function(){
-    console.log("did appear.")
-}
-
-self.willDisappear = function(){
-    console.log("will disappear.")
-}
-
-self.didDisappear = function(){
-    console.log("did disappear.")
-}
-
+// action
 self.pushView = function(){
     self.opts.navigationController.push("subviewcontroller")
 }
-
 self.popView = function(){
     self.opts.navigationController.pop()
 }
-
 self.onFirst = function(){
     self.opts.nav.tab.setSelectedIndex(0)
 }
-
 self.onSecond = function(){
     self.opts.nav.tab.setSelectedIndex(1)
 }
-
 self.onThird = function(){
     self.opts.nav.tab.setSelectedIndex(2)
 }
 
-// delegate
+// nav controller lifecycle
+self.didLoad = function(){
+    console.log("did load.")
+}
+self.willAppear = function(){
+    console.log("will appear.")
+}
+self.didAppear = function(){
+    console.log("did appear.")
+}
+self.willDisappear = function(){
+    console.log("will disappear.")
+}
+self.didDisappear = function(){
+    console.log("did disappear.")
+}
+
+// tab controller lifecycle
 self.shouldSelect = function(){
     console.log("shouldSelect")
     return true
 }
-
 self.didSelect = function(){
     console.log("didSelect")
+}
+self.didDeselect = function(){
+    console.log("didDeselect")
 }
 
 </script>

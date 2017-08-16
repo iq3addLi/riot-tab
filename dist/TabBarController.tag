@@ -102,23 +102,25 @@ var selectedIndex = function(){
 }
 
 var setSelectedIndex = function( index ){
-    if( index == selectedIndex() ) return
+    var selected = selectedIndex()
+    if( index == selected ) return
 
-    var selectingTag = tags[selectedIndex()]
-    if( selectingTag.shouldSelect && selectingTag.shouldSelect() == false ) return
+    // Can select?
+    var selectedTag = tags[selected]
+    if( selectedTag.shouldSelect && selectedTag.shouldSelect() == false ) return
 
-    var views = document.getElementById(self.uniqueID())
-    for( var i = 0; i < views.children.length; i++ ){
-        var view = views.children[i]
-        if( i == index ){ 
-            view.classList.remove("riot-tag-inactive-view")
-            var tag = tags[i]
-            if( tag.didSelect ) { 
-                tag.didSelect()
-            }
-        }
-        else { view.classList.add("riot-tag-inactive-view") }
-    }
+    // Deselect
+    var views = document.getElementById(self.uniqueID())   
+    views.children[selected]
+         .classList.add("riot-tag-inactive-view")
+    if( selectedTag.didDeselect ){ selectedTag.didDeselect() } 
+
+    // Select
+    views.children[index]
+         .classList.remove("riot-tag-inactive-view")
+    var tag = tags[index]
+    if( tag.didSelect ) { tag.didSelect() }
+
 }
 
 var uuidv4 = function() {

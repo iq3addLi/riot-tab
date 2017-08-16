@@ -94,6 +94,15 @@ Return tags by managed at riot-tab. It corresponds to ios tabbarController.viewc
 tab.viewTags()
 ```
 
+## Lifecycle
+The order called is shouldSelect -> didDeselect -> didSelect
+### shouldSelect
+Returns select tag is possible. If you do something and do not want to select, return false.
+### didDeselect
+Called when deselect.
+### didSelect
+Called when select.
+
 ## Demo
 [View demo](https://iq3addli.github.io/riot-tab/index.html)
 

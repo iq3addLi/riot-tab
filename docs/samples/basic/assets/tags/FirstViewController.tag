@@ -45,6 +45,10 @@ self.didSelect = function(){
     console.log("didSelect")
 }
 
+self.didDeselect = function(){
+    console.log("didDeselect")
+}
+
 </script>
 
 </FirstViewController>
